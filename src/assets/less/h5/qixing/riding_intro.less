@@ -1,0 +1,94 @@
+@import "./var";
+
+.riding_intro {
+    font-size: 0.26rem;
+    .picture {
+        background-color: @color1;
+        height: 7.6rem;
+        position: relative;
+        .img_flower_right {
+            position: absolute;
+            height: 2.64rem;
+            right: 0;
+        }
+        .img_zhutu {
+            position: absolute;
+            height: 3.78rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0.53rem;
+        }
+        .img_flower_left {
+            position: absolute;
+            height: 1.26rem;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .img_zhutu_bg {
+            position: absolute;
+            width: 100%;
+            bottom: -0.14rem;
+            z-index: 1;
+        }
+        .img_zhutu_1 {
+            position: absolute;
+            height: 1.523rem;
+            bottom: 0.172rem;
+            right: 0.22rem;
+            z-index: 2
+        }
+        .img_zhutu_bike {
+            position: absolute;
+            height: 0.42rem;
+            bottom: 0.49rem;
+            right: 1.944rem;
+            z-index: 2;
+        }
+        .info {
+            position: absolute;
+            bottom: 1.34rem;
+            text-align: center;
+            width: 100%;
+            p:first-of-type {
+                margin-bottom: 0.16rem;
+            }
+        }
+        .img_futu {
+            position: absolute;
+            width:100%;
+            position: absolute;
+            bottom: 2.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .left {
+                width:0.4rem;
+                height:0.01rem;
+                background-color: white;
+            }
+            .i-center {
+                margin: 0 0.4rem;
+                height: 0.41rem;
+            }
+            .right {
+                width:0.4rem;
+                height:0.01rem;
+                background-color: white;
+            }
+        }
+    }
+    ul.content {
+        margin: 0 0.4rem;
+        background-color: @color1;
+        list-style: disc;
+        padding: 0.48rem 0.25rem 0.58rem 0.6rem;
+        line-height: 0.6rem;
+        position: relative;
+        z-index: 10;
+        li:not(:last-of-type) {
+            margin-bottom: 0.2rem;
+        }
+    }
+}

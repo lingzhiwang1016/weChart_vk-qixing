@@ -1,0 +1,185 @@
+@import "./var";
+
+// less-variable
+body {
+    background-color: @color2;
+}
+
+// less-variable
+.vk-vankely {
+    width: 100%;
+    background-color: @color2;
+    color: @color4;
+    box-sizing: border-box;
+
+    .innerSpecial {
+        color: @color6;
+    }
+
+    .riding_route {
+        background-color: @color1;
+        margin: 0.4rem 0.4rem;
+        margin-bottom: 0rem;
+        .tabTitle {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 0.86rem;
+            background: @color3;
+            font-size: 0.3rem;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 25%;
+                border-radius: 0.06rem 0.06rem 0 0;
+                color: @color5;
+            }
+            li:not(:last-of-type) {
+                border-right: 0.02rem solid @color2;
+            }
+            li.active {
+                color: @color4;
+                background: @color1;
+            }
+        }
+        .tabContent1 {
+            height: 3.76rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0.25rem;
+            .img {
+                width: 100%;
+            }
+        }
+        .tabContent2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0.25rem;
+            .img {
+                width: 100%;
+            }
+            .tabText {
+                color: #A0CDCE;
+                font-size: 0.28rem;
+                margin-top: 0.5rem;
+
+                line-height: 0.6rem;
+            }
+        }
+    }
+
+    .riding_help {
+        margin: 0 0.4rem;
+        font-size: 0.3rem;
+        .topTitle {
+            margin: 0.86rem 0 0.236rem;
+            display: flex;
+            align-items: center;
+            color: @color6;
+            img {
+                height: 0.8rem;
+                margin-right: 0.2rem;
+            }
+        }
+        .phone_ul {
+            background-color: @color1;
+            padding: 0.6rem 0.4rem;
+            .phone-title_first,
+            .phone-title {
+                color: @color6;
+                margin-bottom: 0.2rem;
+            }
+            .phone-title {
+                margin-top: 0.5rem;
+            }
+            .phone {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: @color7;
+                margin-bottom: 0.24rem;
+                height: 0.86rem;
+                padding-left: 0.3rem;
+                div:first-of-type {
+                    width: 1.2rem;
+                }
+                img {
+                    height: 0.86rem;
+                }
+            }
+        }
+        .tipTitle {
+            margin: 0.86rem 0 0.236rem;
+            display: flex;
+            align-items: center;
+            color: @color6;
+            img {
+                height: 0.8rem;
+                margin-right: 0.2rem;
+            }
+        }
+        ol.tip_ol {
+            font-size: 0.26rem;
+            list-style: decimal;
+            padding-left: 0.4rem;
+            line-height: 0.6rem;
+            li {
+                margin-bottom: 0.3rem;
+            }
+        }
+    }
+
+    .project_intro {
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: 0.3rem;
+            margin-bottom: 0.3rem;
+            margin-left: 0.4rem;
+            color: #F3ECA2;
+            img {
+                width: 1.07rem;
+                height: 1.14rem;
+            }
+            .text {
+                margin-left: 0.2rem;
+            }
+        }
+        .tabTitle {
+            font-size: 0.28rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 0.4rem;
+            li {
+                height: 0.8rem;
+                padding: 0 0.3rem;
+                margin: 0 0.2rem 0.2rem 0;
+                background-color: @color1;
+                display: flex;
+                align-items: center;
+                border-radius: 0.01rem;
+            }
+            li.active {
+                background-color: @color9;
+            }
+        }
+        .tabContent {
+            margin: 0.1rem 0.4rem;
+            font-size: 0.26rem;
+            line-height: 0.6rem;
+            padding-bottom: 0.6rem;
+            .content_title {
+                display: none;
+                color: @color9;
+                margin-bottom: 0.2rem;
+            }
+            li {
+                min-height: 7rem;
+            }
+        }
+    }
+}
